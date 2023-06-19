@@ -1,18 +1,19 @@
-{% extends 'base.html'%}
-{% block body %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-        <a href="informatica.html">Informática</a>
-        <a href="alimentos.html">Alimentos</a>
-        <a href="apicultura.html">Apicultura</a>
- 
-</body>
-{% endblock %}
-</html>
+
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}     
+    Boas-vindas
+{% endblock  %}
+
+
+{% block main %}     
+<h1 class="nome_index"> Bem Vindo ao Instituto Federal do Rio Grande do Norte! </h1>     
+<p id="p_index">Conheça os cursos ofertados pelo IFRN Campus Pau dos Ferros!</p>
+<p id="p_index"><a class="link2" href="{% url 'lista' %}">Conheça aqui!</a>
+</p>
+{% endblock  %}
+
+<footer>
+        
+</footer>
