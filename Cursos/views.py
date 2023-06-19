@@ -8,7 +8,7 @@ def index(request):
 
 def detal_curso(request,id_curso):
     curso = get_object_or_404(Cursos, id=id_curso)
-    context={'objeto' : curso}
+    context={'obj' : curso}
     
     return render(request,'Cursos/cursos.html', context)
 

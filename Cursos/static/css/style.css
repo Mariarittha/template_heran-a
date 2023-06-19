@@ -1,0 +1,14 @@
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    color: chartreuse;
+}
+#nav-link{
+    color: black;
+}
+#imagens{
+    text-align: center;
+}
