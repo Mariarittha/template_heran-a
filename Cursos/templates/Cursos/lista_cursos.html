@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Cursos
+{% endblock %}
+
+{% load static %}
+
+{% block main %}
+{% for obj in listar_cursos %}
+  <div class="container">
+  <ul class="lista">
+    <li class="lis_curso">
+      <a class="nome_cursos" href="{% url 'detalhe' objeto.id %}" class="cursos"> {{ obj.titulo }} </a>
+    </li>
+  </ul>
+  </div>
+{%endfor%}
+{% endblock %}
+
+<footer>
+    <p></p>
+</footer>
