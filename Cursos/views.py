@@ -1,20 +1,22 @@
 from django.shortcuts import render
 from .models import Categoria,Cursos
+from django.shortcuts import get_object_or_404
 
-
-def infor(request):
-    inform = Cursos.objects.all()
-    context = {'informa' : inform}
-    return render(request,'Cursos/informatica.html',context)
-
-def ali(request):
-    context={'alimentos': ali}
-    return render(request,'Cursos/alimentos.html',context)
-
-def api(request):
-    context={'apicultura': api}
-    return render(request,'Cursos/apicultura.html',context)
 
 def index(request):
     return render(request, 'Cursos/index.html')
+
+def detal_curso(request,id_curso):
+    curso = get_object_or_404(Cursos, id=id_curso)
+    context={'objeto' : curso}
+    
+    return render(request,'Cursos/cursos.html', context)
+
+def lis_curso(request):
+    cursos = Cursos.objects.all()
+    context = {'listar_cursos' : cursos} 
+    
+    return render(request,'Cursos/lista_cursos.html',context)
+
+
 

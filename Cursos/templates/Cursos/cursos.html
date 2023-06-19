@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Detalhe
+{% endblock %}
+
+
+{% block main %}
+<div class="@">
+    <img class="imgs" src="{{obj.imagem.url}}" alt="Imagem" >
+   
+        <h1 class="titulo">{{ obj.titulo }}</h1>
+        <p class="data de criação">{{ obj.data_criacao }}</p>
+        <p class="categoria">{{ obj.categoria }}</p>
+       
+ 
+</div>
+
+{% endblock %}
+
+<footer>
+        
+</footer>
