@@ -1,14 +1,35 @@
-
-a{
-    text-decoration: none;
+*{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+a  {
+    text-decoration: none; 
+    color: black;
 }
 
 a:hover{
     color: chartreuse;
 }
+
 #nav-link{
     color: black;
+    font-size: 16px;
 }
+
 #imagens{
+    text-align: center;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+ }
+
+li {
+    list-style-type: none;
+    margin: 0px 60px 0px 60px;
+}
+
+#div-listar{
     text-align: center;
 }

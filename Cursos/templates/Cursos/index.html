@@ -1,20 +1,24 @@
 
 {% extends 'base.html' %}
-{% load static %}
 
 {% block title %}     
     Boas-vindas
 {% endblock  %}
 
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
 
 
 {% block body %}  
   
 <h1 class="nome_index"> Bem-vindo(a) a nossa plataforma! </h1>     
 <p></p>
+<div class="div-listar">
+    <a class="nav-link" href="https://portal.ifrn.edu.br/">Portal</a>
 
-<a class="nav-link" href="https://portal.ifrn.edu.br/">Portal</a>
-<a class="nav-link" href="{% url 'lis_curso' %}">Cursos</a>
+    <a class="nav-link" href="{% url 'lis_curso' %}">Cursos</a>
+</div>
+
 
 {% endblock  %}
 
