@@ -1,17 +1,25 @@
 
 {% extends 'base.html' %}
-{% load static %}
 
 {% block title %}     
     Boas-vindas
 {% endblock  %}
 
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
 
-{% block main %}     
-<h1 class="nome_index"> Bem Vindo ao Instituto Federal do Rio Grande do Norte! </h1>     
-<p id="p_index">Conheça os cursos ofertados pelo IFRN Campus Pau dos Ferros!</p>
-<p id="p_index"><a class="link2" href="{% url 'lista' %}">Conheça aqui!</a>
-</p>
+
+{% block body %}  
+  
+<h1 class="nome_index"> Bem-vindo(a) a nossa plataforma! </h1>     
+<p></p>
+<div class="div-listar">
+    <a class="nav-link" href="https://portal.ifrn.edu.br/">Portal</a>
+
+    <a class="nav-link" href="{% url 'lis_curso' %}">Cursos</a>
+</div>
+
+
 {% endblock  %}
 
 <footer>
